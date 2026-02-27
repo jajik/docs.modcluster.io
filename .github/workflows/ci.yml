@@ -23,7 +23,7 @@ jobs:
       - name: Build with Maven
         run: ./mvnw --batch-mode --no-transfer-progress verify
       - name: Upload generated-docs
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: generated-docs
           path: docs/target/generated-docs/*
